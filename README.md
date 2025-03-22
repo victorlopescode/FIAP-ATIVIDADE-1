@@ -34,7 +34,7 @@ A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implemen
 
 ### Aplicação R 📈
 
-- **Leitura dos dados:** Arquivo externo `dados.db`
+- **Leitura dos dados:** Arquivo externo armazenando as entradas dos usuários `dados.db`
 - **Análise Estatística:** Média e desvio padrão por cultura (área e insumos)
 - **Consulta à API Meteorológica:** Dados climáticos em tempo real utilizando **OpenWeatherMap**
 
@@ -44,33 +44,22 @@ A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implemen
 - **R:**
   - `httr` e `jsonlite`: Consulta e manipulação dos dados da API climática
   - `dplyr`: Análise estatística
-  - `here`: Gestão de caminhos relativos
 
 ## ⚙️ Estrutura dos Arquivos
 
 FarmTech-Solutions/
 ```├── python/
-│   ├── menu.py              # Interface principal
-│   ├── calculos.py          # Funções para cálculos
-│   └── dados2.py            # Dados armazenados em listas
+│   ├── menu.py                 # Interface principal
+│   ├── calculos.py             # Funções para cálculos
+│   └── dados2.py               # Dados armazenados em listas
 ├── R/
-│   └── aplicacaoR.r         # Estatísticas e integração da API
-├── dados.db                 # Dados para análise em R
+│   ├── Analise_Estatistica.r   # Estatísticas dos dados
+│   └── DadosClimaticos         # integração com API de dados climaticos
+├── dados.db                    # Dados para análise em R
 ├── documentacao/
-│   └── resumo_artigo.docx   # Resumo do artigo acadêmico
-└── README.md                # Este arquivo
-
-
-## 🚩 Como Executar o Projeto
-
-### Python:
-
-cd python
-python menu.py
-
-R:
-Abra o arquivo R no RStudio:
-source("aplicacaoR.r", encoding = "UTF-8")
+│   └── resumo_artigo.docx      # Resumo do artigo acadêmico
+└── README.md                   # Este arquivo
+```
 
 
 ## 📸 Vídeo Demonstrativo
