@@ -77,13 +77,12 @@ source("aplicacaoR.r", encoding = "UTF-8")
 [Adicione aqui o link do seu vídeo no YouTube (não listado).]
 
 ## 👥 Integrantes do Grupo
-Integrante 1: Desenvolvimento da interface (menu) e lógica principal em Python
 
-Integrante 2: Desenvolvimento dos cálculos matemáticos e manipulação dos dados em vetores (Python)
+- [Victor Lopes Marques](URL_DO_LINKEDIN): Desenvolvimento da interface (menu) e lógica principal em Python  
+- [Tiago Lopes dos Santos](https://www.linkedin.com/in/tiago-lopes-dos-santos/): Desenvolvimento dos cálculos matemáticos e manipulação dos dados em vetores (Python)  
+- [Marcelo Junior Pires Tadaieski](URL_DO_LINKEDIN): Documentação do projeto, resumo acadêmico e gravação do vídeo demonstrativo  
+- [Marcelo Nahoum](URL_DO_LINKEDIN): Desenvolvimento das análises estatísticas e integração com API climática (R)
 
-Integrante 3: Documentação do projeto, resumo acadêmico e gravação do vídeo demonstrativo
-
-Integrante 4: Desenvolvimento das análises estatísticas e integração com API climática (R)
 
 ## 🏫 Instituição
 Projeto desenvolvido para a FIAP – Curso de Inteligência Artificial.
