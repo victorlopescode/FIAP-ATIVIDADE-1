@@ -148,16 +148,16 @@ def deletar_dados():
     if len(rows) == 0:
         print("\nNenhum dado cadastrado para deletar.")
         conn.close()
-        return menu()
+        
+    else:
+        exibir_dados()
+        id = int(input("\nDigite o Número(1 ou 2) da cultura que deseja deletar: "))
 
-    exibir_dados()
-    id = int(input("\nDigite o Número(1 ou 2) da cultura que deseja deletar: "))
+        cursor.execute('DELETE FROM dados WHERE id = ?', (id,))
+        conn.commit()
+        conn.close()
 
-    cursor.execute('DELETE FROM dados WHERE id = ?', (id,))
-    conn.commit()
-    conn.close()
-
-    print("Dados deletados com sucesso!")
+        print("Dados deletados com sucesso!")
 
 # Execução do programa
 menu()
