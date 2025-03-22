@@ -1,50 +1,103 @@
-# Projeto de Gestão Agrícola
+Projeto FarmTech Solutions 🌱
 
-Este projeto consiste em um sistema de gestão agrícola que permite a entrada, exibição, atualização e exclusão de dados relacionados a culturas agrícolas, bem como a análise estatística e consulta de dados climáticos.
+Este projeto é uma atividade acadêmica desenvolvida para a disciplina de Inteligência Artificial da FIAP, simulando um ambiente profissional utilizando Python e R, com versionamento de código pelo GitHub.
 
-## Estrutura do Projeto
+🚜 Contexto do Projeto
 
-### menu3.py
-Este arquivo contém o menu principal do programa e as funções para entrada, exibição, atualização e exclusão de dados agrícolas. As principais funcionalidades incluem:
-- Entrada de dados de culturas (Cana-de-açúcar e Café)
-- Exibição de dados cadastrados
-- Atualização de dados existentes
-- Exclusão de dados
+A FarmTech Solutions firmou contrato com uma fazenda inovadora, com o objetivo de implementar soluções tecnológicas para migrar para a Agricultura Digital.
 
-### database.py
-Este arquivo gerencia a conexão com o banco de dados SQLite e a criação da tabela `dados`. As principais funcionalidades incluem:
-- Criação de conexão com o banco de dados
-- Criação da tabela `dados` se não existir
+O objetivo foi desenvolver:
 
-### calculos.py
-Este arquivo contém funções para calcular a área e os insumos necessários para as culturas de Cana-de-açúcar e Café. As principais funcionalidades incluem:
-- Cálculo da área e fertilizante para Cana-de-açúcar
-- Cálculo da área e pulverização para Café
+Uma aplicação em Python para gerenciar áreas plantadas e insumos agrícolas para duas culturas.
 
-### Análise_Estatística.r
-Este script R realiza a análise estatística dos dados agrícolas armazenados no banco de dados SQLite. As principais funcionalidades incluem:
-- Conexão ao banco de dados e carregamento dos dados
-- Cálculo da média e desvio padrão da área e dos insumos
-- Exibição dos resultados
+Uma aplicação em R para realizar estatísticas básicas sobre esses dados e consultar uma API meteorológica pública.
 
-### DadosClimáticos.r
-Este script R consulta uma API meteorológica para obter dados climáticos atuais de uma cidade específica. As principais funcionalidades incluem:
-- Consulta à API do OpenWeatherMap
-- Exibição dos dados climáticos atuais, como temperatura, sensação térmica, condição do tempo e umidade
+📌 Funcionalidades Desenvolvidas
 
-## Como Executar
+Aplicação Python 🐍
 
-1. Certifique-se de ter o Python e R instalados em seu sistema.
-2. Execute o script `menu3.py` para interagir com o sistema de gestão agrícola.
-3. Utilize os scripts R para realizar análises estatísticas e consultar dados climáticos.
+Culturas escolhidas: Cana-de-açúcar e Café
 
-## Dependências
+Cálculo de área:
 
-- Python
-- SQLite
-- R
-- Pacotes R: `RSQLite`, `dplyr`, `httr`, `jsonlite`
+Retangular (cana-de-açúcar)
+
+Linhas paralelas (café)
+
+Cálculo de insumos:
+
+Fertilizante por hectare (cana-de-açúcar)
+
+Pulverização por metro linear (café)
+
+Manipulação dos dados:
+
+Armazenamento e gerenciamento via vetores
+
+Menu interativo para entrada, exibição, atualização e deleção de dados
+
+Aplicação R 📈
+
+Leitura de dados: Arquivo externo .txt
+
+Análise Estatística: Média e desvio padrão da área e insumos
+
+Consulta à API meteorológica: Dados climáticos em tempo real (OpenWeatherMap)
+
+🛠️ Tecnologias e Pacotes Utilizados
+
+Python: Lógica de programação, estruturação em módulos, listas, loops e decisões.
+
+R: Pacotes utilizados:
+
+httr e jsonlite (API)
+
+dplyr (estatísticas)
+
+here (caminhos relativos)
+
+⚙️ Estrutura dos arquivos
+
+FarmTech-Solutions/
+├── python/
+│   ├── menu.py          # Interface principal
+│   ├── calculos.py      # Funções para cálculos
+│   └── dados2.py        # Dados armazenados em listas
+├── R/
+│   └── aplicacaoR.r     # Script com estatísticas e API meteorológica
+├── dados_cultura.txt    # Arquivo com dados para o R
+├── documentacao/
+│   └── resumo_artigo.docx # Resumo do artigo acadêmico
+└── README.md            # Este arquivo
 
 
---usar o arquivo "requirements.txt" para baixar a biblioteca SQLite--
---pip install requirements.txt--
+🚩 Como executar o projeto
+
+Python:
+cd python
+python menu.py
+
+R:
+Abra o script aplicacaoR.r no RStudio ou VSCode e execute-o diretamente:
+source("aplicacaoR.r", encoding = "UTF-8")
+
+Certifique-se que todas as dependências estão instaladas:
+install.packages(c("httr", "jsonlite", "dplyr", "here"))
+
+📸 Vídeo demonstrativo
+[Adicione aqui o link do seu vídeo no YouTube (não listado).]
+
+
+👥 Integrantes do grupo
+
+Integrante 1: Desenvolvimento do menu e lógica em Python
+
+Integrante 2: Desenvolvimento dos cálculos matemáticos e manipulação em vetores
+
+Integrante 3: Documentação, resumo acadêmico e vídeo
+
+Integrante 4: Estatísticas e integração da API em R
+
+🏫 Instituição
+
+Projeto realizado para a FIAP - Curso de Inteligência Artificial.
