@@ -49,7 +49,7 @@ A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implemen
 ## ⚙️ Estrutura dos Arquivos
 
 FarmTech-Solutions/
-├── python/
+```├── python/
 │   ├── menu.py              # Interface principal
 │   ├── calculos.py          # Funções para cálculos
 │   └── dados2.py            # Dados armazenados em listas
