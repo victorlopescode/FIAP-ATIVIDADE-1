@@ -1,103 +1,84 @@
-Projeto FarmTech Solutions 🌱
+# Projeto FarmTech Solutions 🌱
 
-Este projeto é uma atividade acadêmica desenvolvida para a disciplina de Inteligência Artificial da FIAP, simulando um ambiente profissional utilizando Python e R, com versionamento de código pelo GitHub.
+Este projeto é uma atividade acadêmica desenvolvida para a disciplina de **Inteligência Artificial** da FIAP, simulando um ambiente profissional utilizando **Python** e **R**, com versionamento de código pelo **GitHub**.
 
-🚜 Contexto do Projeto
+## 🚜 Contexto do Projeto
 
-A FarmTech Solutions firmou contrato com uma fazenda inovadora, com o objetivo de implementar soluções tecnológicas para migrar para a Agricultura Digital.
+A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implementar soluções tecnológicas e migrar para a **Agricultura Digital**.
 
-O objetivo foi desenvolver:
+### Objetivos:
+- Desenvolver uma aplicação em **Python** para gerenciar áreas plantadas e insumos agrícolas para duas culturas.
+- Desenvolver uma aplicação em **R** para realizar análises estatísticas básicas desses dados e consultar uma API meteorológica pública.
 
-Uma aplicação em Python para gerenciar áreas plantadas e insumos agrícolas para duas culturas.
+## 📌 Funcionalidades Desenvolvidas
 
-Uma aplicação em R para realizar estatísticas básicas sobre esses dados e consultar uma API meteorológica pública.
+### Aplicação Python 🐍
 
-📌 Funcionalidades Desenvolvidas
+- **Culturas escolhidas:** Cana-de-açúcar e Café
 
-Aplicação Python 🐍
+- **Cálculo de Área:**
+  - Cana-de-açúcar: Área retangular
+  - Café: Área por linhas paralelas
 
-Culturas escolhidas: Cana-de-açúcar e Café
+- **Cálculo de Insumos:**
+  - Cana-de-açúcar: Fertilizante por hectare
+  - Café: Pulverização por metro linear
 
-Cálculo de área:
+- **Manipulação de Dados:**
+  - Armazenamento e gerenciamento através de vetores
+  - Menu interativo para:
+    - Entrada de dados
+    - Exibição dos dados cadastrados
+    - Atualização de dados
+    - Deleção de dados
 
-Retangular (cana-de-açúcar)
+### Aplicação R 📈
 
-Linhas paralelas (café)
+- **Leitura dos dados:** Arquivo externo `dados.db`
+- **Análise Estatística:** Média e desvio padrão por cultura (área e insumos)
+- **Consulta à API Meteorológica:** Dados climáticos em tempo real utilizando **OpenWeatherMap**
 
-Cálculo de insumos:
+## 🛠️ Tecnologias e Pacotes Utilizados
 
-Fertilizante por hectare (cana-de-açúcar)
+- **Python:** Lógica de programação estruturada, módulos, listas (vetores), loops e decisões.
+- **R:**
+  - `httr` e `jsonlite`: Consulta e manipulação dos dados da API climática
+  - `dplyr`: Análise estatística
+  - `here`: Gestão de caminhos relativos
 
-Pulverização por metro linear (café)
+## ⚙️ Estrutura dos Arquivos
 
-Manipulação dos dados:
-
-Armazenamento e gerenciamento via vetores
-
-Menu interativo para entrada, exibição, atualização e deleção de dados
-
-Aplicação R 📈
-
-Leitura de dados: Arquivo externo .txt
-
-Análise Estatística: Média e desvio padrão da área e insumos
-
-Consulta à API meteorológica: Dados climáticos em tempo real (OpenWeatherMap)
-
-🛠️ Tecnologias e Pacotes Utilizados
-
-Python: Lógica de programação, estruturação em módulos, listas, loops e decisões.
-
-R: Pacotes utilizados:
-
-httr e jsonlite (API)
-
-dplyr (estatísticas)
-
-here (caminhos relativos)
-
-⚙️ Estrutura dos arquivos
-
-FarmTech-Solutions/
-├── python/
-│   ├── menu.py          # Interface principal
-│   ├── calculos.py      # Funções para cálculos
-│   └── dados2.py        # Dados armazenados em listas
-├── R/
-│   └── aplicacaoR.r     # Script com estatísticas e API meteorológica
-├── dados_cultura.txt    # Arquivo com dados para o R
-├── documentacao/
-│   └── resumo_artigo.docx # Resumo do artigo acadêmico
-└── README.md            # Este arquivo
+FarmTech-Solutions/ ├── python/ │ ├── menu.py # Interface principal │ ├── calculos.py # Funções para cálculos │ └── dados2.py # Dados armazenados em listas ├── R/ │ └── aplicacaoR.r # Estatísticas e integração da API ├── dados.db # Dados para análise em R ├── documentacao/ │ └── resumo_artigo.docx # Resumo do artigo acadêmico └── README.md # Este arquivo
 
 
-🚩 Como executar o projeto
+## 🚩 Como Executar o Projeto
 
-Python:
+### Python:
+
+Abra o terminal na pasta do projeto e execute:
+
+```bash
 cd python
 python menu.py
 
 R:
-Abra o script aplicacaoR.r no RStudio ou VSCode e execute-o diretamente:
-source("aplicacaoR.r", encoding = "UTF-8")
+Abra o arquivo aplicacaoR.r no RStudio ou terminal R do VSCode e execute:
+source("estatisticas.r", encoding = "UTF-8")
 
-Certifique-se que todas as dependências estão instaladas:
-install.packages(c("httr", "jsonlite", "dplyr", "here"))
+Instale as dependências necessárias antes:
+install.packages(c("httr", "jsonlite"))
 
-📸 Vídeo demonstrativo
+📸 Vídeo Demonstrativo
 [Adicione aqui o link do seu vídeo no YouTube (não listado).]
 
+👥 Integrantes do Grupo
+Integrante 1: Desenvolvimento da interface (menu) e lógica principal em Python
 
-👥 Integrantes do grupo
+Integrante 2: Desenvolvimento dos cálculos matemáticos e manipulação dos dados em vetores (Python)
 
-Integrante 1: Desenvolvimento do menu e lógica em Python
+Integrante 3: Documentação do projeto, resumo acadêmico e gravação do vídeo demonstrativo
 
-Integrante 2: Desenvolvimento dos cálculos matemáticos e manipulação em vetores
-
-Integrante 3: Documentação, resumo acadêmico e vídeo
-
-Integrante 4: Estatísticas e integração da API em R
+Integrante 4: Desenvolvimento das análises estatísticas e integração com API climática (R)
 
 🏫 Instituição
-
-Projeto realizado para a FIAP - Curso de Inteligência Artificial.
+Projeto desenvolvido para a FIAP – Curso de Inteligência Artificial.
