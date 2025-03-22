@@ -48,30 +48,35 @@ A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implemen
 
 ## ⚙️ Estrutura dos Arquivos
 
-FarmTech-Solutions/ ├── python/ │ ├── menu.py # Interface principal │ ├── calculos.py # Funções para cálculos │ └── dados2.py # Dados armazenados em listas ├── R/ │ └── aplicacaoR.r # Estatísticas e integração da API ├── dados.db # Dados para análise em R ├── documentacao/ │ └── resumo_artigo.docx # Resumo do artigo acadêmico └── README.md # Este arquivo
+FarmTech-Solutions/
+├── python/
+│   ├── menu.py              # Interface principal
+│   ├── calculos.py          # Funções para cálculos
+│   └── dados2.py            # Dados armazenados em listas
+├── R/
+│   └── aplicacaoR.r         # Estatísticas e integração da API
+├── dados.db                 # Dados para análise em R
+├── documentacao/
+│   └── resumo_artigo.docx   # Resumo do artigo acadêmico
+└── README.md                # Este arquivo
 
 
 ## 🚩 Como Executar o Projeto
 
 ### Python:
 
-Abra o terminal na pasta do projeto e execute:
-
-```bash
 cd python
 python menu.py
 
 R:
-Abra o arquivo aplicacaoR.r no RStudio ou terminal R do VSCode e execute:
-source("estatisticas.r", encoding = "UTF-8")
+Abra o arquivo R no RStudio:
+source("aplicacaoR.r", encoding = "UTF-8")
 
-Instale as dependências necessárias antes:
-install.packages(c("httr", "jsonlite"))
 
-📸 Vídeo Demonstrativo
+## 📸 Vídeo Demonstrativo
 [Adicione aqui o link do seu vídeo no YouTube (não listado).]
 
-👥 Integrantes do Grupo
+## 👥 Integrantes do Grupo
 Integrante 1: Desenvolvimento da interface (menu) e lógica principal em Python
 
 Integrante 2: Desenvolvimento dos cálculos matemáticos e manipulação dos dados em vetores (Python)
@@ -80,5 +85,5 @@ Integrante 3: Documentação do projeto, resumo acadêmico e gravação do víde
 
 Integrante 4: Desenvolvimento das análises estatísticas e integração com API climática (R)
 
-🏫 Instituição
+## 🏫 Instituição
 Projeto desenvolvido para a FIAP – Curso de Inteligência Artificial.
