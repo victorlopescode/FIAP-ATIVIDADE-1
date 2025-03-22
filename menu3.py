@@ -148,7 +148,7 @@ def deletar_dados():
     if len(rows) == 0:
         print("\nNenhum dado cadastrado para deletar.")
         conn.close()
-        return
+        return menu()
 
     exibir_dados()
     id = int(input("\nDigite o Número(1 ou 2) da cultura que deseja deletar: "))
