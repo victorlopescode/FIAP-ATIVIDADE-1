@@ -140,11 +140,19 @@ def atualizar_dados():
 
 # Deletar dados existentes
 def deletar_dados():
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM dados')
+    rows = cursor.fetchall()
+    
+    if len(rows) == 0:
+        print("\nNenhum dado cadastrado para deletar.")
+        conn.close()
+        return
+
     exibir_dados()
     id = int(input("\nDigite o Número(1 ou 2) da cultura que deseja deletar: "))
 
-    conn = create_connection()
-    cursor = conn.cursor()
     cursor.execute('DELETE FROM dados WHERE id = ?', (id,))
     conn.commit()
     conn.close()
