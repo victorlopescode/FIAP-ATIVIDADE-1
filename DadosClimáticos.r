@@ -20,8 +20,9 @@ if (status_code(resposta) == 200) {
   cat("Cidade:", cidade, "\n")
   cat("Temperatura:", clima$main$temp, "°C\n")
   cat("Sensação térmica:", clima$main$feels_like, "°C\n")
-  cat("Condição do tempo:", clima$weather[[1]]$description, "\n")
+  cat("Condição do tempo:", clima$weather$description[1], "\n")
   cat("Umidade:", clima$main$humidity, "%\n")
 } else {
   cat("Erro ao consultar a API do clima. Código:", status_code(resposta), "\n")
 }
+

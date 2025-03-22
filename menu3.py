@@ -63,7 +63,7 @@ def entrada_dados():
         conn.commit()
         conn.close()
 
-        print("Dados de Cana-de-açúcar cadastrados com sucesso!")
+        print(f"Dados de Cana-de-açúcar cadastrados com sucesso! Área: {area:.2f} m², Fertilizante: {fertilizante:.2f} kg")
 
     elif opcao_cultura == '2':
         n_linhas = int(input('Número de linhas: '))
@@ -78,7 +78,7 @@ def entrada_dados():
         conn.commit()
         conn.close()
 
-        print("Dados do Café cadastrados com sucesso!")
+        print(f"Dados do Café cadastrados com sucesso! Área: {area:.2f} m², Pulverização: {pulverizacao:.2f} litros")
 
     else:
         print("Opção inválida!")
