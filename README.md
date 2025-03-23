@@ -28,7 +28,7 @@ A **FarmTech Solutions** firmou contrato com uma fazenda inovadora para implemen
   - Armazenamento e gerenciamento através de vetores
   - Menu interativo para:
     - Entrada de dados
-    - Exibição dos dados cadastrados
+    - Exibição dos dados
     - Atualização de dados
     - Deleção de dados
 
