@@ -134,7 +134,8 @@ def atualizar_dados():
             conn.commit()
             print("Dados atualizados com sucesso!")
     else:
-        print("Nenhum dado foi cadastrado")
+        print("Nenhum dado foi encontrado.\n"
+        "Digite apenas 1 ou 2")
     
     conn.close()
 
